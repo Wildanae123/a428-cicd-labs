@@ -4,14 +4,19 @@ import './App.css';
 
 class App extends Component {
   render() {
+
+    const computerName = window.navigator.userAgent;
+    const accessDate = new Date().toLocaleString();
+
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Welcome to my React app</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          <p>Computer name : {computerName}</p>
+          <p>Access Date : {accessDate}</p>
         </p>
       </div>
     );
